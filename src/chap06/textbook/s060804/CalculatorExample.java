@@ -1,4 +1,4 @@
-package chap06.textbook3s060804;
+package chap06.textbook.s060804;
 
 public class CalculatorExample {
 	public static void main(String[] args) {
