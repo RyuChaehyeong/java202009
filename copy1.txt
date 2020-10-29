@@ -1,0 +1,24 @@
+package chap18.exer_pad;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+
+public class FileOutputStreamExample {
+	public static void main(String[] args) throws Exception{
+		String origianlFileName = 
+				"src/chap18/exer_pad/FileOutputStreamExample.java";
+		String targetFileName =
+				"copy1.txt";
+		
+		InputStream is = new FileInputStream(origianlFileName);
+		OutputStream os = new FileOutputStream(targetFileName);
+		
+		int data = 0;
+		while((data = is.read()) != -1) {
+			os.write(data);
+		}
+		System.out.println("복사완료");
+	}
+}

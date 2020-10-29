@@ -36,7 +36,7 @@ public class MyClass {
 	 
 	//Solution========How to approach to instance member in a static member========
 		//↳After creating an object in static method, 
-		// approach to instance member by using obj(reference variable)
+		// you can approach to instance member by using obj(reference variable)
 	static void method3() {
 		MyClass obj = new MyClass();
 		obj.var1=200; 
